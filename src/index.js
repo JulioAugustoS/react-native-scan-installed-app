@@ -5,7 +5,7 @@ import CheckPackageInstallation from '../android';
 class AppInstalledScan {
 
     static getAppList() {
-      return Object.keys(APP_LIST);
+      return Object.keys(list);
     }
 
     static verifyPackageName(value) {
