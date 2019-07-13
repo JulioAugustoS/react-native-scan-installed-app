@@ -1,0 +1,36 @@
+{
+  "name": "react-native-scan-installed-app",
+  "version": "0.0.1",
+  "description": "React Native plugin for checking if apps are installed on the device.",
+  "author": "Julio Augusto",
+  "license": "MIT",
+  "keywords": [
+    "scan-app-installed",
+    "react-native",
+    "react-component",
+    "android",
+    "ios"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.40.0",
+    "react": ">=15.4.0"
+  },
+  "nativePackage": true,
+  "rnpm": {
+    "android": {
+      "sourceDir": "./android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioAugustoS/react-native-scan-installed-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JulioAugustoS/react-native-scan-installed-app/issues"
+  },
+  "homepage": "https://github.com/JulioAugustoS/react-native-scan-installed-app#readme"
+}
