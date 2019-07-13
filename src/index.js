@@ -8,9 +8,9 @@ class AppInstalledScan {
       return Object.keys(APP_LIST);
     }
 
-    static verifyPackageName(package) {
+    static verifyPackageName(value) {
       return new Promise((resolve, reject) => {
-        CheckPackageInstallation.isPackageInstalled(package, (isInstalled) => {
+        CheckPackageInstallation.isPackageInstalled(value, (isInstalled) => {
           resolve(isInstalled);
         });
       });
