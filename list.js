@@ -1,4 +1,4 @@
-export const list = {
+export const LIST = {
   "nubank": { 
     packageName: "com.nu.production", 
     urlSheme: "nuapp", 

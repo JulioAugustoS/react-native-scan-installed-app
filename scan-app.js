@@ -1,11 +1,11 @@
 import { Linking, Platform } from 'react-native';
-import { list } from './list';
-import CheckPackageInstallation from '../android';
+import { LIST } from './list';
+import CheckPackageInstallation from './android';
 
 class AppInstalledScan {
 
-    static getAppList() {
-      return Object.keys(list);
+    static getList() {
+      return Object.keys(LIST);
     }
 
     static verifyPackageName(value) {
@@ -46,11 +46,11 @@ class AppInstalledScan {
     }
 
     static appInstalledAndroid(value) {
-        return this.verifyPackageName(list[value] != null ? list[value].packageName : value);
+        return this.verifyPackageName(LIST[value] != null ? LIST[value].packageName : value);
     }
 
     static appInstalledIOS(value) {
-        return this.verifyUrlScheme(list[value].urlScheme, list[value].urlParams);
+        return this.verifyUrlScheme(LIST[value].urlScheme, LIST[value].urlParams);
     }
 }
 
