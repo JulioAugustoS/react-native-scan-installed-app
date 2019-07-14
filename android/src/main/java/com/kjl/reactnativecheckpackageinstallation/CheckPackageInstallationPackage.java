@@ -1,4 +1,4 @@
-package com.rpt.reactnativecheckpackageinstallation;
+package com.kjl.reactnativecheckpackageinstallation;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
