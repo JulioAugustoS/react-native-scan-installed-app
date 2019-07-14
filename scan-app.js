@@ -4,8 +4,18 @@ import CheckPackageInstallation from './android';
 
 class AppInstalledScan {
 
+    /**
+     * return list content keys
+     */
     static getList() {
       return Object.keys(LIST);
+    }
+
+    /**
+     * Return complete list
+     */
+    static getAllList() {
+      return LIST;
     }
 
     static verifyPackageName(value) {
@@ -31,16 +41,13 @@ class AppInstalledScan {
       });
     }
 
-    /**
-     * 
-     */
-    static appInstalled(key) {
+    static appInstalled(value) {
       return Platform.select({
         ios: () => { 
-          return this.appInstalledIOS(key); 
+          return this.appInstalledIOS(value); 
         },
         android: () => { 
-          return this.appInstalledAndroid(key); 
+          return this.appInstalledAndroid(value); 
         }
       })();
     }
